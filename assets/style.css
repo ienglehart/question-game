@@ -1,0 +1,21 @@
+.scoreboard{
+    margin: auto;
+    float: left;
+    padding: 40px;
+}
+
+.timer{
+    margin:auto;
+    float: right;
+    padding: 40px;
+}
+.question{
+    margin: auto;
+    padding: 100px;
+    float: center;
+}
+.answers{
+    margin: auto;
+    padding: 150px;
+    float: center;
+}
