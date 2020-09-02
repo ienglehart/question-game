@@ -28,13 +28,14 @@ var questions = [
 ];
 
 
+var startEl = document.getElementById('startTime');
 var timerEl = document.getElementById('countdown');
 var questionEl = document.getElementById('question');
 var answerEl = document.getElementById('answer');
 
+startEl.onclick(countdown());
 
-
-// 60 second timer plus a call for it
+// 60 second timer
 function countdown() {
     var timeLeft = 60;
     var timeInterval = setInterval(function() {
@@ -43,7 +44,6 @@ function countdown() {
         }
     }, 1000);
 }
-countdown();
 
 
 
@@ -57,7 +57,7 @@ function question(){
 
       //somehow this is gonna print a list from the array.
       for(var x = 0; answerEl = questions[i].choices[x]; x++){
-        
+
       }
 
       //so i have no idea how i would go about getting the inputs from the buttons in here
