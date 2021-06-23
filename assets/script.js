@@ -28,12 +28,17 @@ var questions = [
 ];
 
 
-var startEl = document.getElementById('startTime');
+var startEl = document.getElementById('startBtn');
 var timerEl = document.getElementById('countdown');
 var questionEl = document.getElementById('question');
 var answerEl = document.getElementById('answer');
 
-startEl.onclick(countdown());
+startEl.addEventListener("click", function() {
+  // > TEST < window.alert("click");
+  question();
+  countdown();
+});
+
 
 // 60 second timer
 function countdown() {
@@ -52,20 +57,24 @@ var correctAnswers = 0;
 
 //question asking function
 function question(){
+ questionEl.innerHTML = ("hi from buton press")
+  /*
   for(var i = 0; i < questions.length; i++) {
-      questionEl = questions[i].title;
+    var question = questions[i].title;
+    questionEl.innerHTML=(question);
 
-      //somehow this is gonna print a list from the array.
-      for(var x = 0; answerEl = questions[i].choices[x]; x++){
+     
+    //somehow this is gonna print a list from the array. 
+    for(var x = 0; answerEl = questions[i].choices[x]; x++){
 
-      }
+    }
 
-      //so i have no idea how i would go about getting the inputs from the buttons in here
-      if(answer ===  && questions[i].answer === ""){
-        correctAnswers++;
-      }
-      else{
-        timeLeft - 15;
-      }
-  }
-}
+    //so i have no idea how i would go about getting the inputs from the buttons in here
+    if(answer === answer && questions[i].answer === ""){
+      correctAnswers++;
+    }
+    else{
+      timeLeft - 15;
+    }
+  } */
+};

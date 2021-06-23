@@ -6,19 +6,50 @@
     <title>Quiz!</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
-<header>
-    <div class="scoreboard">high score</div>
-    <div class="timer" id="countdown"></div>
-</header>
 <body>
-    <button id="startTime">Start!</button>
-    <div class="question">question?</div>
-    <div class="answers">
-        <button id="answerA">A.</button>
-        <button id="answerB">B.</button>
-        <button id="answerC">C.</button>
-        <button id="answerD">D.</button>
+    <div class="parent">
+        <header class = "header-section">
+            <div class="header-box scoreboard green">high score</div>
+            <div class="header-box title red">Coding Quiz!</div>
+            <div class="header-box timer blue" id="countdown">10:4</div>
+        </header>
+        <main>
+            <div class="start-btn">
+                <button id="startBtn">Start!</button>
+            </div>
+
+            <div  class="question">
+                <div>question?</div>
+            </div>
+            
+            <div class="answer-section">
+                <div id="answer">
+                    <button>
+                        <span>A.</span>
+                        <span id="answer-a">answer</span>
+                    </button>
+                </div>
+                <div id="answer">
+                    <button>
+                        <span>B.</span>
+                        <span id="answer-b">answer</span>
+                    </button>
+                </div>
+                <div id="answer">
+                    <button>
+                        <span>C.</span>
+                        <span id ="answer-c">answer</span>
+                    </button>
+                </div>
+                <div id="answer">
+                    <button>
+                        <span>D.</span>
+                        <span id="answer-d">answer</span>
+                    </button>
+                </div>
+            </div>
+        </main>
     </div>
-    <script src = "./assets/script.js"></script>
 </body>
+<script src = "./assets/script.js"></script>
 </html>

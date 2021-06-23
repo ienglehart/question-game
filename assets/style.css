@@ -1,21 +1,46 @@
-.scoreboard{
-    margin: auto;
-    float: left;
-    padding: 40px;
+body{
+    margin:0;
+    padding:0;
+}
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
-.timer{
-    margin:auto;
-    float: right;
-    padding: 40px;
+/*Header Styles*/
+.header-section{
+    display: flex;
+    flex-wrap: wrap;
+    background: lightcoral;
+}
+.header-box{
+    flex: 0 1 150px;
+    margin: auto;
+    padding: 30px; 
+    text-align: center;
+    background: none;
+}
+
+
+/*Body Styles*/
+.start-btn{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding: 30px;
 }
 .question{
+    display: grid;
+    place-items: center;
     margin: auto;
-    padding: 100px;
-    float: center;
+    padding: 30px;
 }
-.answers{
+.answer-section{ 
+    display: grid;
+    place-items: center;
     margin: auto;
-    padding: 150px;
-    float: center;
+    padding: 30px;
+}
+#answer{
+    padding: 10px;
 }
