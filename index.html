@@ -9,7 +9,9 @@
 <body>
     <div class="parent">
         <header class = "header-section">
-            <div class="header-box scoreboard green">high score</div>
+            <div class="header-box scoreboard green">Current Score:
+                <span id="currentScore"></span>
+            </div>
             <div class="header-box title red">Coding Quiz!</div>
             <div class="header-box timer blue" id="countdown">10:4</div>
         </header>
@@ -19,32 +21,32 @@
             </div>
 
             <div  class="question">
-                <div>question?</div>
+                <div id="currentQuestion">question?</div>
             </div>
             
             <div class="answer-section">
                 <div id="answer">
                     <button>
                         <span>A.</span>
-                        <span id="answer-a">answer</span>
+                        <span id="answer0">answer</span>
                     </button>
                 </div>
                 <div id="answer">
                     <button>
                         <span>B.</span>
-                        <span id="answer-b">answer</span>
+                        <span id="answer1">answer</span>
                     </button>
                 </div>
                 <div id="answer">
                     <button>
                         <span>C.</span>
-                        <span id ="answer-c">answer</span>
+                        <span id ="answer2">answer</span>
                     </button>
                 </div>
                 <div id="answer">
                     <button>
                         <span>D.</span>
-                        <span id="answer-d">answer</span>
+                        <span id="answer3">answer</span>
                     </button>
                 </div>
             </div>
