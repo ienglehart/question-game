@@ -2,7 +2,7 @@
 var questions = [
   {
     title: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
+    choices: ["alerts", "booleans", "strings", "numbers"],
     answer: "alerts"
   },
   {
@@ -32,10 +32,10 @@ var startEl = document.getElementById('startBtn');
 var timerEl = document.getElementById('countdown');
 var questionEl = document.getElementById('currentQuestion');
 var answerEl = document.getElementById('answer');
-const ans0 = document.getElementById('answer0');
-const ans1 = document.getElementById('answer0');
-const ans2 = document.getElementById('answer0');
-const ans3 = document.getElementById('answer0');
+var ans0 = document.getElementById('ans0');
+const ans1 = document.getElementById('ans1');
+const ans2 = document.getElementById('ans2');
+const ans3 = document.getElementById('ans3');
 
 
 
@@ -76,9 +76,18 @@ function question(){
       var answerText = questions[i].choices[x]
 
       answerSelect.innerHTML=(answerText);
-    }
+    };
     
     //event listener
-     
+    ans0.addEventListener("click", function(){
+      // console.log("eyy beans");
+      if(questions[i].choices[0] === questions[i].answer ){
+        correctAnswers++;
+        return;
+      }else{
+        timeLeft -15;
+        return;
+      };
+    })
   }
 };
